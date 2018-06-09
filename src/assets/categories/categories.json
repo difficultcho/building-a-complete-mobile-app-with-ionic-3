@@ -2,60 +2,60 @@
   "categories": [
     {
       "slug": "IONIC-3",
-      "title": "Ionic 3",
-      "description": "Ask about Ionic 3",
+      "title": "AP计算机",
+      "description": "2019年5月考",
       "background": "#0077ff",
       "tags": [
         {
-          "name": "Ionic3"
+          "name": "数据结构"
         },
         {
-          "name": "Angular4"
+          "name": "面向对象"
         },
         {
-          "name": "Typescript"
+          "name": "数组"
         }
       ]
     },
     {
       "slug": "ANGULAR-4",
-      "title": "Angular 4",
-      "description": "Ask about Angular 4",
+      "title": "AP统计学",
+      "description": "2019年5月考",
       "background": "#F84C61",
       "tags":[
         {
-          "name": "Typescript"
+          "name": "中心极限定理"
         },
         {
-          "name": "Angular4"
+          "name": "大数法则"
         }
       ]
     },
     {
       "slug": "IONIC-NATIVE",
-      "title": "Ionic Native",
-      "description": "Ask about Ionic Native",
+      "title": "高考英语",
+      "description": "2019年高考",
       "background": "#16144A",
       "tags": [
         {
-            "name": "Ionic3"
+            "name": "过去分词"
         },
         {
-            "name": "Plugins"
+            "name": "单词速记"
         }
       ]
     },
     {
       "slug": "IONIC-CLI",
-      "title": "Ionic CLI",
-      "description": "Ask about Ionic CLI",
+      "title": "大学化学",
+      "description": "大学化学基础课",
       "background": "#432B9C",
       "tags": [
         {
-            "name": "Ionic3"
+            "name": "怎么做毒药"
         },
         {
-            "name": "CLI"
+            "name": "怎么做炸药"
         }
       ]
     }
