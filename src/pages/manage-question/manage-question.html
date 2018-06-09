@@ -1,11 +1,11 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      <span>Create Question</span>
+      <span>提个问题</span>
     </ion-title>
     <ion-buttons start>
       <button ion-button (click)="dismiss()">
-        <span ion-text showWhen="ios">Cancel</span>
+        <span ion-text showWhen="ios">取消提问</span>
         <ion-icon name="md-close" showWhen="android, windows"></ion-icon>
       </button>
     </ion-buttons>
@@ -17,13 +17,13 @@
     <ion-row>
       <ion-col offset-1 col-10>
         <ion-item class="textarea-item">
-          <ion-label floating>Write your question here</ion-label>
+          <ion-label floating>问题写在这里</ion-label>
           <ion-textarea formControlName="question" rows="5"></ion-textarea>
         </ion-item>
       </ion-col>
       <ion-col offset-1 col-10>
         <button ion-button block type="submit" [disabled]="!questionForm.valid" color="ask">
-          <b>Ask</b>
+          <b>提交问题</b>
         </button>
       </ion-col>
     </ion-row>

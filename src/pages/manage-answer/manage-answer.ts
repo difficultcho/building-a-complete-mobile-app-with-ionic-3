@@ -24,6 +24,7 @@ export class ManageAnswerPage {
     public answerService: AnswerService
   ) {
     let data = navParams.get('data');
+    console.log(data);
     this._mode = isPresent(data) && isPresent(data.mode) ? data.mode : '';
     this._question_id = isPresent(data) && isPresent(data.questionId) ? data.questionId : '';
     this._answer_id = isPresent(data) && isPresent(data.answerId) ? data.answerId : '';

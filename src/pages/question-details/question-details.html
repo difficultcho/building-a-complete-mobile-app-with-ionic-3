@@ -4,7 +4,7 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      <span>Question details</span>
+      <span>问题详情</span>
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -17,13 +17,13 @@
       </ion-col>
       <ion-col no-padding col-12>
         <p class="vote-call-to-action">
-          Was this question usefull? Rate it!
+          问得好不好？
         </p>
         <ion-row class="question-actions-row">
           <ion-col no-padding col-4>
             <button class="question-action-button up-vote" ion-button icon-left round block small color="dark" (click)= "upVoteQuestion()">
               <ion-icon name="arrow-up"></ion-icon>
-              <div>Up-vote</div>
+              <div>赞</div>
             </button>
           </ion-col>
           <ion-col no-padding col-3 class="score-col">
@@ -37,7 +37,7 @@
           <ion-col no-padding col-4>
             <button class="question-action-button down-vote" ion-button icon-left round block small color="dark" (click)= "downVoteQuestion()">
               <ion-icon name="arrow-down"></ion-icon>
-              <div>Down-vote</div>
+              <div>踩</div>
             </button>
           </ion-col>
         </ion-row>
@@ -47,15 +47,15 @@
 
   <div *ngIf="answers.length == 0">
     <h3 class="answers-call-out">
-      There are no answers to this question. Be the first one to answer!
+      还没人回答过，当第一个答题者吧！
     </h3>
   </div>
 
   <div *ngIf="answers.length > 0">
     <h3 class="answers-call-out">
-      <span class="call-out-explanation">We found </span>
+      <span class="call-out-explanation">共有</span>
       <ion-badge class="call-out-tag">{{ answers.length }}</ion-badge>
-      <span> Answers for this question!</span>
+      <span>个答案!</span>
     </h3>
 
     <ion-list class="answers-list">
@@ -78,7 +78,7 @@
               <ion-col col-4 class="votes-details">
                 <div class="details-wrapper">
                   <span class="total-votes">{{ answer.positiveVotes + answer.negativeVotes }}</span>
-                  <span class="details-text">Votes</span>
+                  <span class="details-text">票</span>
                 </div>
               </ion-col>
               <ion-col col-4 class="actions-details">
@@ -100,7 +100,7 @@
 <ion-footer>
   <ion-toolbar>
     <button ion-button block (click)="createAnswerModal()" color="answer">
-      <b>Know the Answer? Don't be shy!</b>
+      <b>我来回答！</b>
     </button>
   </ion-toolbar>
 </ion-footer>

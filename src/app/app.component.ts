@@ -33,21 +33,21 @@ export class MyApp {
 
     this.pages = [
       {
-        title: 'All',
+        title: '过滤条件1',
         component: LearnFeedPage,
         params: {
           query: 'all'
         }
       },
       {
-        title: 'Basic',
+        title: '过滤条件2',
         component: LearnFeedPage,
         params: {
           query: 'basic'
         }
       },
       {
-        title: 'Core',
+        title: '过滤条件3',
         component: LearnFeedPage,
         params: {
           query: 'core'

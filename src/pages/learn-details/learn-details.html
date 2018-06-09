@@ -4,7 +4,7 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      <span>Learn Ionic!</span>
+      <span>万题王</span>
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -12,7 +12,7 @@
 <ion-content>
   <ion-row class="category-concept-details" [style.background-color]="category.background">
     <ion-col no-padding col-12>
-      <h2 class="category-title">Learn all about {{ category.title }}!</h2>
+      <h2 class="category-title">{{ category.title }} 相关内容</h2>
     </ion-col>
     <ion-col no-padding col-12>
       <p class="category-description">
@@ -28,12 +28,13 @@
   </div>
 
   <div *ngIf="questions.length > 0">
+    <!--
     <h3 class="questions-call-out">
       <span>Find all the Questions and Answers about </span>
       <ion-badge class="call-out-tag">{{ category.title }}</ion-badge>
       <span class="call-out-explanation"> from the community</span>
     </h3>
-
+    -->
     <ion-list class="questions-list">
       <ion-item class="question-item" *ngFor="let question of questions">
         <ion-row>
@@ -54,13 +55,13 @@
               <ion-col col-4 class="votes-details">
                 <div class="details-wrapper">
                   <span class="total-votes">{{ question.positiveVotes + question.negativeVotes }}</span>
-                  <span class="details-text">Votes</span>
+                  <span class="details-text">投过票</span>
                 </div>
               </ion-col>
               <ion-col col-4 class="answers-details" (click)="openAnswers(question)">
                 <div class="details-wrapper">
                   <span class="total-answers">{{ question.answers.length }}</span>
-                  <span class="details-text">{{ (question.answers.length > 1 || question.answers.length == 0) ? 'Answers' : 'Answer' }}</span>
+                  <span class="details-text">答案</span>
                 </div>
               </ion-col>
               <ion-col col-4 class="actions-details">
@@ -79,7 +80,7 @@
 <ion-footer>
   <ion-toolbar>
     <button ion-button block (click)="createQuestionModal()" color="ask">
-      <b>Have a Question? Ask!</b>
+      <b>提个问题</b>
     </button>
   </ion-toolbar>
 </ion-footer>
