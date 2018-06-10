@@ -18,6 +18,7 @@ export class LearnFeedPage {
     public navParams: NavParams,
     public learnService: LearnService
   ) {
+    console.log(navParams);
     let query_param = navParams.get('query');
     this._query = isPresent(query_param) ? query_param : 'all';
   }

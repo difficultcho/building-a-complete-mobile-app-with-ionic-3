@@ -36,21 +36,21 @@ export class MyApp {
         title: '过滤条件1',
         component: LearnFeedPage,
         params: {
-          query: 'all'
+          query: '过滤条件1'
         }
       },
       {
         title: '过滤条件2',
         component: LearnFeedPage,
         params: {
-          query: 'basic'
+          query: '过滤条件2'
         }
       },
       {
         title: '过滤条件3',
         component: LearnFeedPage,
         params: {
-          query: 'core'
+          query: '过滤条件3'
         }
       }
     ];
