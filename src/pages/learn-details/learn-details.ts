@@ -44,7 +44,7 @@ export class LearnDetailsPage {
 
   getQuestions(){
     let loading = this.loadingCtrl.create({
-      content: 'Please wait...'
+      content: '正在拼命……'
     });
     loading.present();
     this.questionService.getQuestionsBySlug(this.category.slug)
