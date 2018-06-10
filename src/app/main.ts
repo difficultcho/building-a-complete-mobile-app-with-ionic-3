@@ -6,4 +6,5 @@ import { AppModule } from './app.module';
 platformBrowserDynamic().bootstrapModule(AppModule);
 
 //This is your API url
-LoopBackConfig.setBaseURL('https://q-a-example-loopback-api.herokuapp.com');
+//LoopBackConfig.setBaseURL('https://q-a-example-loopback-api.herokuapp.com');
+LoopBackConfig.setBaseURL('http://www.kkmsee.com:3000');

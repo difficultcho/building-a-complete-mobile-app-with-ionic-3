@@ -61,7 +61,7 @@ export class QuestionDetailsPage {
 
   getQuestion(){
     let loading = this.loadingCtrl.create({
-      content: 'Please wait...'
+      content: '正在拼命……'
     });
     this.questionService.getQuestion(this.questionId)
     .then(res => {
@@ -72,7 +72,7 @@ export class QuestionDetailsPage {
 
   getAnswers(){
     let loading = this.loadingCtrl.create({
-      content: 'Please wait...'
+      content: '正在拼命……'
     });
     loading.present();
     this.answerService.getAnswers(this.questionId)
