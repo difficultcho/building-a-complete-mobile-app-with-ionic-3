@@ -9,6 +9,10 @@ import { QuestionDetailsPage } from '../pages/question-details/question-details'
 import { ManageQuestionPage } from '../pages/manage-question/manage-question';
 import { ManageAnswerPage } from '../pages/manage-answer/manage-answer';
 
+import { LoginPage } from '../pages/login/login';
+import { HomePage } from '../pages/home/home';
+import { TabsPage } from '../pages/tabs/tabs';
+
 import { QuestionService } from '../services/question.service';
 import { AnswerService } from '../services/answer.service';
 import { LearnService } from '../services/learn.service';
@@ -19,6 +23,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SDKBrowserModule } from '../../sdk/index';
 
+import { HttpClientModule } from '@angular/common/http';
+import { OAuthModule } from 'angular-oauth2-oidc';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -26,12 +33,19 @@ import { SDKBrowserModule } from '../../sdk/index';
     LearnDetailsPage,
     QuestionDetailsPage,
     ManageQuestionPage,
-    ManageAnswerPage
+    ManageAnswerPage,
+
+    LoginPage,
+    HomePage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    SDKBrowserModule.forRoot()
+    SDKBrowserModule.forRoot(),
+
+    HttpClientModule,
+    OAuthModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -40,7 +54,11 @@ import { SDKBrowserModule } from '../../sdk/index';
     LearnDetailsPage,
     QuestionDetailsPage,
     ManageQuestionPage,
-    ManageAnswerPage
+    ManageAnswerPage,
+
+    LoginPage,
+    HomePage,
+    TabsPage
   ],
   providers: [
     StatusBar,

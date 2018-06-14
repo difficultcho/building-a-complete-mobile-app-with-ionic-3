@@ -4,6 +4,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { LearnFeedPage } from '../pages/learn-feed/learn-feed';
+import { LoginPage } from '../pages/login/login';
+import { TabsPage } from '../pages/tabs/tabs';
 
 @Component({
   selector: 'app-root',
@@ -12,8 +14,8 @@ import { LearnFeedPage } from '../pages/learn-feed/learn-feed';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  // make LearnFeedPage the root (or first) page
-  rootPage: any = LearnFeedPage;
+  // make TabsPage the root (or first) page
+  rootPage: any = TabsPage;
 
   pages: Array<{title: string, component: any, params: any}>;
 
@@ -24,6 +26,7 @@ export class MyApp {
     public menu: MenuController,
     public app: App
   ) {
+    this.rootPage = TabsPage;
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
@@ -51,6 +54,13 @@ export class MyApp {
         component: LearnFeedPage,
         params: {
           query: '过滤条件3'
+        }
+      },
+      {
+        title: '登录',
+        component: LoginPage,
+        params: {
+          query: ''
         }
       }
     ];
